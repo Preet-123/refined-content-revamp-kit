@@ -5,9 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Users, UserRound, ChevronRight, MessageSquare, BarChart3, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import FeatureCard from "@/components/FeatureCard";
-import TestimonialCard from "@/components/TestimonialCard";
 
 const Index = () => {
   const [hoverGroup, setHoverGroup] = useState(false);
@@ -153,49 +151,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Hear from our users who improved their communication skills</p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <TestimonialCard 
-              quote="SpeakSpace helped me land my dream job! The mock interviews gave me the confidence I needed."
-              author="Alex Chen"
-              role="Software Engineer"
-            />
-            
-            <TestimonialCard 
-              quote="I used to dread group discussions, but after practicing here, I'm now leading them at work."
-              author="Sarah Johnson"
-              role="Project Manager"
-            />
-            
-            <TestimonialCard 
-              quote="The real-time feedback is invaluable. It's like having a personal speaking coach available 24/7."
-              author="Michael Rodriguez"
-              role="Graduate Student"
-            />
-          </div>
-        </div>
-      </section>
-      
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to improve your communication skills?</h2>
-          <p className="text-xl max-w-3xl mx-auto mb-8">Join thousands of users who have transformed their speaking abilities</p>
-          <Button size="lg" className="bg-white text-indigo-700 hover:bg-gray-100">
-            Get Started For Free
-          </Button>
-        </div>
-      </section>
-      
-      <Footer />
     </div>
   );
 };

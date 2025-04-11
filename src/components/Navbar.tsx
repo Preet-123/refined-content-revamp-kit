@@ -18,14 +18,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/features" className="text-gray-700 hover:text-indigo-600 transition-colors">Features</Link>
-            <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">How It Works</a>
-            <Link to="/resources" className="text-gray-700 hover:text-indigo-600 transition-colors">Resources</Link>
-            <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Pricing</a>
-          </nav>
-
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" className="border-indigo-600 text-indigo-600 hover:bg-indigo-50" asChild>
@@ -48,12 +40,6 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white py-4 px-4 border-b border-gray-200">
-          <nav className="flex flex-col space-y-4 mb-6">
-            <Link to="/features" className="text-gray-700 hover:text-indigo-600 transition-colors py-2">Features</Link>
-            <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors py-2">How It Works</a>
-            <Link to="/resources" className="text-gray-700 hover:text-indigo-600 transition-colors py-2">Resources</Link>
-            <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors py-2">Pricing</a>
-          </nav>
           <div className="flex flex-col space-y-3">
             <Button variant="outline" className="border-indigo-600 text-indigo-600 w-full" asChild>
               <Link to="/login">Log In</Link>
