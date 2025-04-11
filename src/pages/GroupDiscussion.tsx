@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Clock, Users, Plus, MessageSquare } from "lucide-react";
@@ -27,23 +26,7 @@ const GroupDiscussion = () => {
       startTime: new Date(Date.now() + 86400000), // Tomorrow
       duration: 45,
       participants: 4,
-    },
-    {
-      id: "2",
-      title: "Public Speaking Practice",
-      description: "Improve your presentation skills with constructive feedback from peers.",
-      startTime: new Date(Date.now() + 172800000), // Day after tomorrow
-      duration: 60,
-      participants: 6,
-    },
-    {
-      id: "3",
-      title: "Debate Skills Workshop",
-      description: "Learn how to structure arguments and respond effectively in debates.",
-      startTime: new Date(Date.now() + 259200000), // 3 days from now
-      duration: 90,
-      participants: 8,
-    },
+    }
   ]);
 
   // Form state
