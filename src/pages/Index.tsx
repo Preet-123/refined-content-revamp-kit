@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, UserRound, ChevronRight, MessageSquare, BarChart3, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import FeatureCard from "@/components/FeatureCard";
 
@@ -72,9 +73,12 @@ const Index = () => {
                   <Button 
                     size="lg" 
                     className={`w-full transition-all bg-gradient-to-r ${hoverGroup ? 'from-blue-500 to-blue-700' : 'from-blue-400 to-blue-600'}`}
+                    asChild
                   >
-                    Join Session
-                    <ChevronRight className="ml-2 h-4 w-4" />
+                    <Link to="/group-discussion">
+                      Join Session
+                      <ChevronRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -111,9 +115,12 @@ const Index = () => {
                   <Button 
                     size="lg" 
                     className={`w-full transition-all bg-gradient-to-r ${hoverPersonal ? 'from-purple-500 to-pink-600' : 'from-purple-400 to-pink-500'}`}
+                    asChild
                   >
-                    Join Session
-                    <ChevronRight className="ml-2 h-4 w-4" />
+                    <Link to="/personal-interview">
+                      Join Session
+                      <ChevronRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>
