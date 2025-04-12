@@ -7,7 +7,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -132,8 +131,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 };
