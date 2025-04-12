@@ -118,6 +118,18 @@ const Login = () => {
               >
                 Sign in
               </Button>
+              <div className="mt-3">
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="w-full border-indigo-600 text-indigo-600"
+                  asChild
+                >
+                  <Link to="/faculty-discussion">
+                    Go to Faculty Discussion Portal
+                  </Link>
+                </Button>
+              </div>
             </div>
           </form>
           
